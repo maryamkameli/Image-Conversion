@@ -45,7 +45,7 @@ All outputs below are in Results/ and were produced with the shown commands.
 Output format can still be PNG/JPEG/PPM with normal 8-bit range; you’ll see visible banding.
 
 <p align="center">
-  <img src="Results/goldy_quant2.png" width="560">
+  <img src="Results/goldy_quant2.png">
 </p>
 
 # PPM file depth 
@@ -79,7 +79,7 @@ Extracts the rectangle at (x=250, y=50) with width=100, height=150.
 Keeps only the green component (channel=1), zeros the others:
 
 <p align="center">
-  <img src="Results/goldy_cropped_green.jpeg" width="560">
+  <img src="Results/goldy_cropped_green.jpeg">
 </p>
 
 
