@@ -38,14 +38,15 @@ All outputs below are in Results/ and were produced with the shown commands.
 ./image -input SampleImages/goldy.ppm -output Results/goldy_copy.ppm
 
 # Quantization 
-<p align="center">
-  <img src="Results/goldy_quant2.png" width="560">
-</p>
 
 ./image -input SampleImages/goldy.ppm -quantize 2 -output Results/goldy_quant2.png
 ./image -input SampleImages/goldy.ppm -quantize 2 -output Results/goldy_quant2.ppm
 
 Output format can still be PNG/JPEG/PPM with normal 8-bit range; you’ll see visible banding.
+
+<p align="center">
+  <img src="Results/goldy_quant2.png" width="560">
+</p>
 
 # PPM file depth 
 
@@ -68,7 +69,7 @@ Example for 2-bit PPM (Max=3): channel values become {0, 1, 2, 3} instead of {0.
 
 Extracts the rectangle at (x=250, y=50) with width=100, height=150.
 
-The output PPM header’s width/height should be 100 150.
+
 
 # Extract a single channel
 
@@ -77,12 +78,19 @@ The output PPM header’s width/height should be 100 150.
 
 Keeps only the green component (channel=1), zeros the others:
 
+<p align="center">
+  <img src="Results/goldy_cropped_green.jpeg" width="560">
+</p>
+
 
 # Pipeline (brightness → crop → extract)
 
 ./image -input SampleImages/goldy.ppm -brightness 1.4 -crop 250 50 100 150 -extractChannel 0 \
   -output Results/goldy_cropped_bright_red.jpg
-
+  
+<p align="center">
+  <img src="Results/goldy_cropped_bright_red.jpg" width="560">
+</p>
 
 Scales intensity by 1.4 (clamped to 0..255), then crops, then keeps only red.
 
