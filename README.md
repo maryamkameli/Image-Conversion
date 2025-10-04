@@ -1,4 +1,4 @@
-CSCI 5607 — HW2: Image Conversion & Processing
+## CSCI 5607 — HW2: Image Conversion & Processing
 
 This program loads images and performs a sequence of operations from the command line. You can convert formats, adjust brightness, quantize, crop, extract a channel, and write PPMs at specific bit depths.
 
