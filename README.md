@@ -89,7 +89,7 @@ Keeps only the green component (channel=1), zeros the others:
   -output Results/goldy_cropped_bright_red.jpg
   
 <p align="center">
-  <img src="Results/goldy_cropped_bright_red.jpg" width="560">
+  <img src="Results/goldy_cropped_bright_red.jpg">
 </p>
 
 Scales intensity by 1.4 (clamped to 0..255), then crops, then keeps only red.
