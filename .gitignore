@@ -1,0 +1,24 @@
+
+# build & binaries
+image
+image.exe
+a.out
+*.o
+*.obj
+
+# sanitizer outputs / crash reports
+*.dSYM/
+*.stackdump
+
+# generated images/results
+Results/
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.bmp
+
+# editor cruft
+.DS_Store
+.idea/
+.vscode/
