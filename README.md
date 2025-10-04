@@ -83,7 +83,7 @@ Keeps only the green component (channel=1), zeros the others:
 </p>
 
 
-# Pipeline (brightness → crop → extract)
+# Brightness → crop → extract
 
 ./image -input SampleImages/goldy.ppm -brightness 1.4 -crop 250 50 100 150 -extractChannel 0 \
   -output Results/goldy_cropped_bright_red.jpg
