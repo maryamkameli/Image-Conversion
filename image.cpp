@@ -103,7 +103,7 @@ uint8_t* read_ppm(char* imgName, int& width, int& height){
          ppmFile >> r >> g >> b;
          // scale 0..max to 0..255 and round to nearest neighber
          // Reference: https://stackoverflow.com/questions/2422712/rounding-integer-division-instead-of-truncating 
-         
+
          img_data[i*width*4 + j*4] = (r * 255 + maximum/2) / maximum ;  //Red
          img_data[i*width*4 + j*4 + 1] = (g * 255 + maximum/2) / maximum;  //Green
          img_data[i*width*4 + j*4 + 2] = (b * 255 + maximum/2) / maximum;  //Blue
@@ -244,7 +244,7 @@ void Image::ExtractChannel(int channel) {
          else if(channel == 2) p.r = p.g = 0;
 
          GetPixel(x,y) = p;
-      }  
+      }
    }
 }
 
